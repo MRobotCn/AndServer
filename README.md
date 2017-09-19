@@ -19,7 +19,7 @@
 compile 'cn.mrobot.com.yanzhenjie:andserver:1.0.3'
 
 //if need exclude some dependencies
-compile('com.yanzhenjie:andserver:+') {
+compile('cn.mrobot.com.yanzhenjie:andserver:+') {
     exclude group: 'commons-io', module: 'commons-io'
 }
 ```
