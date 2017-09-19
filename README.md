@@ -16,13 +16,18 @@
 # Dependencies
 * Gradle
 ```groovy
-compile 'com.yanzhenjie:andserver:1.0.3'
+compile 'cn.mrobot.com.yanzhenjie:andserver:1.0.3'
+
+//if need exclude some dependencies
+compile('com.yanzhenjie:andserver:+') {
+    exclude group: 'commons-io', module: 'commons-io'
+}
 ```
 
 * Maven
 ```xml
 <dependency>
-  <groupId>com.yanzhenjie</groupId>
+  <groupId>cn.mrobot.com.yanzhenjie</groupId>
   <artifactId>andserver</artifactId>
   <version>1.0.3</version>
   <type>pom</type>
